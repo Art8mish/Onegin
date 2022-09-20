@@ -31,11 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="io.cpp" />
-		<Unit filename="libraries.h" />
+		<Unit filename="include/io.h" />
+		<Unit filename="include/libraries.h" />
+		<Unit filename="include/sorting_func.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="sort.cpp" />
-		<Unit filename="sorting_func.h" />
+		<Unit filename="src/io.cpp" />
+		<Unit filename="src/sort.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

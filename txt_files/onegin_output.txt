@@ -1,3 +1,4 @@
+
 'As by lot, God wot,'
 'Doubt thou the stars are fire;
 'Gainst Fortune's state would treason have pronounc'd.
@@ -1660,7 +1661,7 @@ I am very proud, revengeful, ambitious; with more offences at
 I be so able as now.
 I bought an unction of a mountebank,
 I can no more. The King, the King's to blame.
-I can no more. The King, the King's to blame.
+I can no more. The King, the King's to blame.
 I cannot dream of. I entreat you both
 I cannot live to hear the news from England,
 I chiefly lov'd. 'Twas AEneas' tale to Dido, and thereabout
@@ -3704,8 +3705,8 @@ anything we see. We'll have a speech straight. Come, give us
 appurtenance of welcome is fashion and ceremony. Let me
 are
 are
-are shot off.
-are shot off.
+are shot off.Ham. O villany! Ho! let the door be lock'd.
+are shot off.s.
 are unwrung.
 argal, she drown'd herself wittingly.
 article, and his infusion of such dearth and rareness as, to
@@ -3951,7 +3952,6 @@ lord of beasts, and his crib shall stand at the king's mess.
 lord!
 love passing well.
 lowest note to the top of my compass; and there is much
-m. O villany! Ho! let the door be lock'd.
 mad as
 made
 make
@@ -4070,7 +4070,6 @@ remember. And there is pansies, that's for thoughts.
 repair hither and say you are not fit.
 revolution,
 rewards,
-s.
 savoury,
 say,
 say-
@@ -4272,14 +4271,15 @@ your table!
 your whoreson dead body. Here's a skull now. This skull hath
 yourself and him, he shall not exceed you three hits; he hath
 
+
 The treacherous instrument is in thy hand,
 Hath turn'd itself on me. Lo, here I lie,
-m. O villany! Ho! let the door be lock'd.
+are shot off.Ham. O villany! Ho! let the door be lock'd.
 Never to rise again. Thy mother's poison'd.
 No medicine in the world can do thee good.
 In thee there is not half an hour of life.
-are shot off.
-s.
+I can no more. The King, the King's to blame.
+are shot off.s.
 Go, bid the soldiers shoot.
 Treachery! Seek it out.
 Laer. It is here, Hamlet. Hamlet, thou art slain;
@@ -5732,7 +5732,6 @@ To do't. Examples gross as earth exhort me.
 Queen. Come hither, my dear Hamlet, sit by me.
 By Cock, they are to blame.
 I can no more. The King, the King's to blame.
-I can no more. The King, the King's to blame.
 That hath in it no profit but the name.
 King. The very same.
 Were nothing but to waste night, day, and time.
@@ -5845,7 +5844,6 @@ Ham. Marry, this is miching malhecho; it means mischief.
 My head should be struck off.
 A flourish of trumpets, and two pieces go off.
 Enter Hamlet and Horatio afar off.
-are shot off.
 The Devil himself.
 excellence; but to know a man well were to know himself.
 It is a poison temper'd by himself.
@@ -8545,7 +8543,6 @@ The lives of many. The cesse of majesty
 honesty from what it is to a bawd than the force of honesty
 And we did think it writ down in our duty
 Did Hamlet so envenom with his envy
-
 
 Claudius, King of Denmark.
 Marcellus, Officer.
@@ -13021,12 +13018,10 @@ Take up the bodies. Such a sight as this
 Becomes the field but here shows much amiss.
 Go, bid the soldiers shoot.
 Exeunt marching; after the which a peal of ordnance
-are shot off.
-s.
+are shot off.s.
 Go, bid the soldiers shoot.
 Exeunt marching; after the which a peal of ordnance
-are shot off.
-m. O villany! Ho! let the door be lock'd.
+are shot off.Ham. O villany! Ho! let the door be lock'd.
 Treachery! Seek it out.
 [Laertes falls.]
 Laer. It is here, Hamlet. Hamlet, thou art slain;
@@ -13036,4 +13031,5 @@ The treacherous instrument is in thy hand,
 Unbated and envenom'd. The foul practice
 Hath turn'd itself on me. Lo, here I lie,
 Never to rise again. Thy mother's poison'd.
-I can no more. The King, the King's to blame.
+I can no more. The King, the King's to blame.
+

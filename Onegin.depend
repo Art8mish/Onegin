@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1663700987 source:c:\program files\codeblocks\cbprojects\onegin\main.cpp
-	"libraries.h"
+1663703392 source:c:\program files\codeblocks\cbprojects\onegin\main.cpp
+	"include/libraries.h"
 
-1663698662 c:\program files\codeblocks\cbprojects\onegin\libraries.h
+1663702826 c:\program files\codeblocks\cbprojects\onegin\libraries.h
 	<stdlib.h>
 	<TXlib.h>
 	<sys/stat.h>
@@ -20,5 +20,22 @@
 
 1663698397 c:\program files\codeblocks\cbprojects\onegin\sorting_func.h
 
-1663698426 c:\program files\codeblocks\cbprojects\onegin\io.h
+1663702826 c:\program files\codeblocks\cbprojects\onegin\io.h
+
+1663702826 c:\program files\codeblocks\cbprojects\onegin\include\libraries.h
+	<stdlib.h>
+	<TXlib.h>
+	<sys/stat.h>
+	"sorting_func.h"
+	"io.h"
+
+1663698397 c:\program files\codeblocks\cbprojects\onegin\include\sorting_func.h
+
+1663702826 c:\program files\codeblocks\cbprojects\onegin\include\io.h
+
+1663703270 source:c:\program files\codeblocks\cbprojects\onegin\src\io.cpp
+	"../include/libraries.h"
+
+1663703269 source:c:\program files\codeblocks\cbprojects\onegin\src\sort.cpp
+	"../include/libraries.h"
 

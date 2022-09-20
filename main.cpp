@@ -1,8 +1,8 @@
 
-#define INPUT_FILE_NAME "onegin.txt"
-#define OUTPUT_FILE_NAME "onegin_output.txt"
+#define INPUT_FILE_NAME "txt_files/onegin.txt"
+#define OUTPUT_FILE_NAME "txt_files/onegin_output.txt"
 
-#include "libraries.h"
+#include "include/libraries.h"
 
 int main(void)
 {

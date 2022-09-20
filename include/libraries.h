@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <TXlib.h>
 #include <sys/stat.h>
-#include "src/sorting_func.h"
-#include "../src/io.h"
+#include "sorting_func.h"
+#include "io.h"
 
 #define STR_MAXLEN 1000
 
