@@ -1,0 +1,3108 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E5F968 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x29F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9AC in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (12):
+
+     10:     str_count = ReadFile(input_file, pt_strings);
+     11: 
+=>   12:     fclose(input_file);
+     13: 
+     14:     WriteFile(pt_strings, str_count);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 20:59:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 20:59:44
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E5F968 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x29F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9AC in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (12):
+
+     10:     str_count = ReadFile(input_file, pt_strings);
+     11: 
+=>   12:     fclose(input_file);
+     13: 
+     14:     WriteFile(pt_strings, str_count);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 20:59:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 20:59:44
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772815F в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x6320756F в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x3494 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772815F in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042BB79 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanStrdup() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (74):
+
+     72:         char *str_adress = *(strings + i * sizeof(char*));
+     73: 
+=>   74:         free(str_adress);
+     75:     }
+     76: }
+
+# 5 0x0042B9C8 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (16):
+
+     14:     WriteFile(pt_strings, str_count);
+     15: 
+=>   16:     CleanStrdup(pt_strings, str_count);
+     17: 
+     18:     fclose(input_file);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:00:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:01:03
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772815F в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x6320756F в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x3494 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772815F in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042BB79 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanStrdup() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (74):
+
+     72:         char *str_adress = *(strings + i * sizeof(char*));
+     73: 
+=>   74:         free(str_adress);
+     75:     }
+     76: }
+
+# 5 0x0042B9C8 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (16):
+
+     14:     WriteFile(pt_strings, str_count);
+     15: 
+=>   16:     CleanStrdup(pt_strings, str_count);
+     17: 
+     18:     fclose(input_file);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:00:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:01:03
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02ABED68 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x564 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (18):
+
+     16:     //CleanStrdup(pt_strings, str_count);
+     17: 
+=>   18:     fclose(input_file);
+     19: }
+     20: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:01:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:01:31
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02ABED68 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x564 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (18):
+
+     16:     //CleanStrdup(pt_strings, str_count);
+     17: 
+=>   18:     fclose(input_file);
+     19: }
+     20: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:01:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:01:31
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E00668 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x3F60 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (18):
+
+     16:     //CleanStrdup(pt_strings, str_count);
+     17: 
+=>   18:     fclose(input_file);
+     19: }
+     20: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:03:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:03:52
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E00668 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x3F60 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (18):
+
+     16:     //CleanStrdup(pt_strings, str_count);
+     17: 
+=>   18:     fclose(input_file);
+     19: }
+     20: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:03:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:03:52
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E0F2E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1948 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (19):
+
+     17:     //CleanStrdup(pt_strings, str_count);
+     18: 
+=>   19:     fclose(input_file);
+     20: }
+     21: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:05:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:05:38
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E0F2E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1948 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (19):
+
+     17:     //CleanStrdup(pt_strings, str_count);
+     18: 
+=>   19:     fclose(input_file);
+     20: }
+     21: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:05:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:05:38
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E16168 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x27DC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (19):
+
+     17:     //CleanStrdup(pt_strings, str_count);
+     18: 
+=>   19:     fclose(input_file);
+     20: }
+     21: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:10:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:10:14
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E16168 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x27DC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9C0 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (19):
+
+     17:     //CleanStrdup(pt_strings, str_count);
+     18: 
+=>   19:     fclose(input_file);
+     20: }
+     21: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:10:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:10:14
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E00768 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1A3C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:12:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:12:23
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E00768 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1A3C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:12:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:12:24
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DFDEE8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x10A8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:16:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:16:56
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DFDEE8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x10A8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:16:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:16:56
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02AAD868 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x2EDC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:25:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:25:32
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02AAD868 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x2EDC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:25:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:25:32
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DF05E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x3A5C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:28:02
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7772841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DF05E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x3A5C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7772841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x7776ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x77727D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x765B7E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x765F896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x765EA179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x765EA222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:28:02
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C5D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0x9D128EBB в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x2F74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C5D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C5685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0042B9D8 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (18):
+
+     16:         char *str_adress = *(pt_strings + i * sizeof(char*));
+     17: 
+=>   18:         printf("%s", str_adress);
+     19:     }
+     20:     //WriteFile(pt_strings, str_count);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:30:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:35:51
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C5D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0x9D128EBB в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x2F74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C5D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C5685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0042B9D8 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (18):
+
+     16:         char *str_adress = *(pt_strings + i * sizeof(char*));
+     17: 
+=>   18:         printf("%s", str_adress);
+     19:     }
+     20:     //WriteFile(pt_strings, str_count);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:30:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:35:51
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E0D1E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1EFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:39:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:39:19
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E0D1E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1EFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:39:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:39:19
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E66BE8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x618 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:40:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:40:30
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02E66BE8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x618 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:40:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:40:30
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DF5868 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x2694 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:41:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:41:11
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DF5868 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x2694 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:41:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:41:11
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DF60E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1C8C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:52:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:52:11
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE841C в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x02DF60E8 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: Cmdre0, Thread: 0x1C8C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE841C in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+# 4 0x75C6896C in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 5 0x75C5A179 in C:\Windows\System32\msvcrt.dll: clearerr_s()
+# 6 0x75C5A222 in C:\Windows\System32\msvcrt.dll: fclose()
+
+# 7 0x0042B9F3 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (24):
+
+     22:     //CleanStrdup(pt_strings, str_count);
+     23: 
+=>   24:     fclose(input_file);
+     25: }
+     26: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 21:52:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 21:52:11
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE8119 в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x00BAEEB2 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x21DC (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE8119 in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042BB20 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanStrdup() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (70):
+
+     68:         char *str_adress = *(strings + i * sizeof(char*));
+     69: 
+=>   70:         free(str_adress);
+     71:     }
+     72: }
+
+# 5 0x00457414 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (16):
+
+     14:     WriteFile(pt_strings, str_count);
+     15: 
+=>   16:     CleanStrdup(pt_strings, str_count);
+     17: 
+     18: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 23:47:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 23:50:06
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76EE8119 в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x00BAEEB2 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x21DC (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76EE8119 in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76F2ED01 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76EE7D06 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C27E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042BB20 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanStrdup() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (70):
+
+     68:         char *str_adress = *(strings + i * sizeof(char*));
+     69: 
+=>   70:         free(str_adress);
+     71:     }
+     72: }
+
+# 5 0x00457414 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (16):
+
+     14:     WriteFile(pt_strings, str_count);
+     15: 
+=>   16:     CleanStrdup(pt_strings, str_count);
+     17: 
+     18: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 16 2022 23:47:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 16 2022 23:50:06
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x32C0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x004573D8 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (11):
+
+      9:     str_count = ReadFile(pt_strings);
+     10: 
+=>   11:     Sorting(pt_strings, str_count);
+     12: 
+     13:     WriteFile(pt_strings, str_count);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 00:53:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 00:53:17
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x32C0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x004573D8 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (11):
+
+      9:     str_count = ReadFile(pt_strings);
+     10: 
+=>   11:     Sorting(pt_strings, str_count);
+     12: 
+     13:     WriteFile(pt_strings, str_count);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 00:53:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 00:53:17
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C5AB18 в функции fputs(). Попытка прочесть данные по адресу 0x00000120 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x640 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C5AB18 in C:\Windows\System32\msvcrt.dll: fputs()
+
+# 1 0x0045737B in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (53):
+
+     51:         char *str_adress = strings_array[index][0];
+     52: 
+=>   53:         fprintf(output_file, "%s", str_adress);
+     54:     }
+     55: 
+
+# 2 0x00482D57 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (25):
+
+     23:     //Sorting(pt_strings, str_amount);
+     24: 
+=>   25:     WriteFile(strings_array, str_amount);
+     26: 
+     27:     //CleanStrdup(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 02:40:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 02:42:46
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C5AB18 в функции fputs(). Попытка прочесть данные по адресу 0x00000120 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x640 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C5AB18 in C:\Windows\System32\msvcrt.dll: fputs()
+
+# 1 0x0045737B in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (53):
+
+     51:         char *str_adress = strings_array[index][0];
+     52: 
+=>   53:         fprintf(output_file, "%s", str_adress);
+     54:     }
+     55: 
+
+# 2 0x00482D57 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (25):
+
+     23:     //Sorting(pt_strings, str_amount);
+     24: 
+=>   25:     WriteFile(strings_array, str_amount);
+     26: 
+     27:     //CleanStrdup(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 02:40:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 02:42:46
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x3304 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:02:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:02:26
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x3304 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:02:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:02:26
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x29BC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:02:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:03:15
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x29BC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:02:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:03:15
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x1AC8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:04:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:04:48
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x1AC8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:04:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:04:48
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x390 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:04:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:06:18
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C6BC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x00658DDC (32-bit), Flags: Cmdre0, Thread: 0x390 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C6BC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00482D1C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (23):
+
+     21: 
+     22: 
+=>   23:     Sorting(strings_array, str_amount);
+     24: 
+     25:     WriteFile(strings_array, str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 03:04:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 03:06:18
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75CABC10 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0xA68 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75CABC10 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00457534 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (28):
+
+     26: 
+     27: 
+=>   28:     SortingLeftToRight(strings_array, str_amount);
+     29: 
+     30:     WriteFile(strings_array, str_amount, SORTED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 13:10:25, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 13:14:23
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75CABC10 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0xA68 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75CABC10 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x00457534 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (28):
+
+     26: 
+     27: 
+=>   28:     SortingLeftToRight(strings_array, str_amount);
+     29: 
+     30:     WriteFile(strings_array, str_amount, SORTED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 13:10:25, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 13:14:23
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75CABC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2FE0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75CABC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x0045751C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (28):
+
+     26: 
+     27: 
+=>   28:     SortingLeftToRight(strings_array, str_amount);
+     29: 
+     30:     WriteFile(strings_array, str_amount, SORTED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 13:25:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 13:25:48
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75CABC12 в функции strcmp(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2FE0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75CABC12 in C:\Windows\System32\msvcrt.dll: strcmp()
+
+# 1 0x0045751C in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (28):
+
+     26: 
+     27: 
+=>   28:     SortingLeftToRight(strings_array, str_amount);
+     29: 
+     30:     WriteFile(strings_array, str_amount, SORTED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 13:25:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 13:25:49
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C9D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000049 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x35A8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C9D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C9685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0045751E in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (31):
+
+     29:     fclose(input_file);
+     30: 
+=>   31:     printf("%s", *lines);
+     32: 
+     33:     for (int i = 0; i < str_amount; i++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 16:18:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 16:29:47
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x75C9D2D2 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000049 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x35A8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x75C9D2D2 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x75C9685B in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0045751E in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (31):
+
+     29:     fclose(input_file);
+     30: 
+=>   31:     printf("%s", *lines);
+     32: 
+     33:     for (int i = 0; i < str_amount; i++)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 16:18:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 16:29:47
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAD1 в функции WriteFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 60. Попытка прочесть данные по адресу 0x000005ED в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2FF0 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAD1 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (60):
+
+     58:     for (int index = 0; index < line_count; index++)
+     59:     {
+=>   60:         printf("%s", *lines_buffer);
+     61:         char *str_adress = *lines_buffer++;
+     62: 
+
+# 1 0x00457563 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (39):
+
+     37:         WriteFile(output_file, lines_buffer, str_amount);
+     38: 
+=>   39:         WriteFile(output_file, copied_lines_buffer, str_amount);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 18:49:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 18:50:55
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAD1 в функции WriteFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 60. Попытка прочесть данные по адресу 0x000005ED в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2FF0 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAD1 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (60):
+
+     58:     for (int index = 0; index < line_count; index++)
+     59:     {
+=>   60:         printf("%s", *lines_buffer);
+     61:         char *str_adress = *lines_buffer++;
+     62: 
+
+# 1 0x00457563 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (39):
+
+     37:         WriteFile(output_file, lines_buffer, str_amount);
+     38: 
+=>   39:         WriteFile(output_file, copied_lines_buffer, str_amount);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 18:49:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 18:50:55
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAD7 в функции WriteFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 60. Попытка прочесть данные по адресу 0x000005ED в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2E2C (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAD7 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (60):
+
+     58:     for (int index = 0; index < line_count; index++)
+     59:     {
+=>   60:         char *str_adress = *lines_buffer++;
+     61: 
+     62:         fprintf(output_file, "%s", str_adress);
+
+# 1 0x0045754B in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (39):
+
+     37:         WriteFile(output_file, lines_buffer, str_amount);
+     38: 
+=>   39:         WriteFile(output_file, copied_lines_buffer, str_amount);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 18:49:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 18:51:51
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAD7 в функции WriteFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 60. Попытка прочесть данные по адресу 0x000005ED в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2E2C (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAD7 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (60):
+
+     58:     for (int index = 0; index < line_count; index++)
+     59:     {
+=>   60:         char *str_adress = *lines_buffer++;
+     61: 
+     62:         fprintf(output_file, "%s", str_adress);
+
+# 1 0x0045754B in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (39):
+
+     37:         WriteFile(output_file, lines_buffer, str_amount);
+     38: 
+=>   39:         WriteFile(output_file, copied_lines_buffer, str_amount);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 18:49:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 18:51:51
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAD7 в функции WriteFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 60. Попытка прочесть данные по адресу 0x000005ED в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x1E60 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAD7 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (60):
+
+     58:     for (int index = 0; index < line_count; index++)
+     59:     {
+=>   60:         char *str_adress = *lines_buffer++;
+     61: 
+     62:         printf("%s", str_adress);
+
+# 1 0x0045755F in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (39):
+
+     37:         WriteFile(output_file, lines_buffer, str_amount);
+     38: 
+=>   39:         WriteFile(output_file, copied_lines_buffer, str_amount);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 18:49:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 18:55:22
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAD7 в функции WriteFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 60. Попытка прочесть данные по адресу 0x000005ED в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x1E60 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAD7 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: WriteFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (60):
+
+     58:     for (int index = 0; index < line_count; index++)
+     59:     {
+=>   60:         char *str_adress = *lines_buffer++;
+     61: 
+     62:         printf("%s", str_adress);
+
+# 1 0x0045755F in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (39):
+
+     37:         WriteFile(output_file, lines_buffer, str_amount);
+     38: 
+=>   39:         WriteFile(output_file, copied_lines_buffer, str_amount);
+     40: 
+     41: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 17 2022 18:49:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 17 2022 18:55:22
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAC1 в функции ReadFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 39. Попытка записать данные по адресу 0x00401290 в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x190C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAC1 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: ReadFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (39):
+
+     37:     int line_count = 0;
+     38: 
+=>   39:     *lines_buffer = char_buffer;
+     40: 
+     41:     for (int char_count = 0; char_count < char_amount; char_count++)
+
+# 1 0x0042B9A6 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CreateWorkingField() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (13):
+
+     11:     (char*)  calloc(field.char_amount, sizeof(char)),
+     12: 
+=>   13:     ReadFile(input_file, field.char_buffer, field.char_amount, field.lines_buffer),
+     14:     (char**) calloc(field.char_amount, sizeof(char*))
+     15: 
+
+# 2 0x00457530 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (6):
+
+      4: int main(void)
+      5: {
+=>    6:     struct WorkingField field = CreateWorkingField();
+      7: 
+      8: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2022 02:05:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2022 02:06:39
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042BAC1 в функции ReadFile() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp на строке 39. Попытка записать данные по адресу 0x00401290 в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x190C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042BAC1 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: ReadFile() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (39):
+
+     37:     int line_count = 0;
+     38: 
+=>   39:     *lines_buffer = char_buffer;
+     40: 
+     41:     for (int char_count = 0; char_count < char_amount; char_count++)
+
+# 1 0x0042B9A6 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CreateWorkingField() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (13):
+
+     11:     (char*)  calloc(field.char_amount, sizeof(char)),
+     12: 
+=>   13:     ReadFile(input_file, field.char_buffer, field.char_amount, field.lines_buffer),
+     14:     (char**) calloc(field.char_amount, sizeof(char*))
+     15: 
+
+# 2 0x00457530 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (6):
+
+      4: int main(void)
+      5: {
+=>    6:     struct WorkingField field = CreateWorkingField();
+      7: 
+      8: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2022 02:05:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2022 02:06:39
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004830A6 в функции ReversedStrcmp() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/sort.cpp на строке 71. Попытка прочесть данные по адресу 0x012AFFFF в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2AE4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004830A6 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: ReversedStrcmp() at C:/Program Files/CodeBlocks/CBProjects/Onegin/sort.cpp (71):
+
+     69:     while (1)
+     70:     {
+=>   71:         if ((*pt1 == *pt2) && (pt1 - str1) != 0
+     72:                          && (pt2 - str1) != 0)
+     73:         {
+
+# 1 0x00482F63 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: Sorting() at C:/Program Files/CodeBlocks/CBProjects/Onegin/sort.cpp (18):
+
+     16:         for (int index = 0; index < str_count - indention - 1; index++)
+     17:         {
+=>   18:             if (strcmp_type(lines_buffer[index], lines_buffer[index + 1]) > 0)
+     19:             {
+     20:                 char* temporary = lines_buffer[index + 1];
+
+# 2 0x004575E6 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (26):
+
+     24:     WriteFile(output_file, field.lines_buffer, field.str_amount);
+     25: 
+=>   26:     Sorting(field.lines_buffer, field.str_amount, ReversedStrcmp);
+     27: 
+     28:     WriteFile(output_file, field.lines_buffer, field.str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2022 19:51:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 19 2022 20:03:29
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004830A6 в функции ReversedStrcmp() в файле C:/Program Files/CodeBlocks/CBProjects/Onegin/sort.cpp на строке 71. Попытка прочесть данные по адресу 0x012AFFFF в модуле C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x2AE4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004830A6 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: ReversedStrcmp() at C:/Program Files/CodeBlocks/CBProjects/Onegin/sort.cpp (71):
+
+     69:     while (1)
+     70:     {
+=>   71:         if ((*pt1 == *pt2) && (pt1 - str1) != 0
+     72:                          && (pt2 - str1) != 0)
+     73:         {
+
+# 1 0x00482F63 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: Sorting() at C:/Program Files/CodeBlocks/CBProjects/Onegin/sort.cpp (18):
+
+     16:         for (int index = 0; index < str_count - indention - 1; index++)
+     17:         {
+=>   18:             if (strcmp_type(lines_buffer[index], lines_buffer[index + 1]) > 0)
+     19:             {
+     20:                 char* temporary = lines_buffer[index + 1];
+
+# 2 0x004575E6 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (26):
+
+     24:     WriteFile(output_file, field.lines_buffer, field.str_amount);
+     25: 
+=>   26:     Sorting(field.lines_buffer, field.str_amount, ReversedStrcmp);
+     27: 
+     28:     WriteFile(output_file, field.lines_buffer, field.str_amount);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 19 2022 19:51:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 19 2022 20:03:29
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76F883AC в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x013AC720 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x35F0 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76F883AC in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76FCEB81 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76F87C96 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C67E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042C061 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanPointerBuffer() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (156):
+
+    154:     Assert(buffer != NULL, POINTER_IS_NULL);
+    155: 
+=>  156:     free(buffer);
+    157: 
+    158:     return 0;
+
+# 5 0x004579DB in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (25):
+
+     23: 
+     24: 
+=>   25:     CleanPointerBuffer((*field).lines_buffer);
+     26:     CleanCharBuffer((*field).chars_buffer);
+     27: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2022 21:58:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2022 21:59:43
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76F883AC в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x013AC720 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x35F0 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76F883AC in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76FCEB81 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76F87C96 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C67E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042C061 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanPointerBuffer() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (156):
+
+    154:     Assert(buffer != NULL, POINTER_IS_NULL);
+    155: 
+=>  156:     free(buffer);
+    157: 
+    158:     return 0;
+
+# 5 0x004579DB in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (25):
+
+     23: 
+     24: 
+=>   25:     CleanPointerBuffer((*field).lines_buffer);
+     26:     CleanCharBuffer((*field).chars_buffer);
+     27: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2022 21:58:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2022 21:59:43
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76F883AC в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x0133C720 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x3DCC (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76F883AC in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76FCEB81 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76F87C96 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C67E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042C061 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanPointerBuffer() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (156):
+
+    154:     Assert(buffer != NULL, POINTER_IS_NULL);
+    155: 
+=>  156:     free(buffer);
+    157: 
+    158:     return 0;
+
+# 5 0x004579DB in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (25):
+
+     23: 
+     24: 
+=>   25:     CleanPointerBuffer((*field).lines_buffer);
+     26:     CleanCharBuffer((*field).chars_buffer);
+     27: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2022 21:58:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2022 21:59:58
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x76F883AC в функции RtlGetCurrentServiceSessionId(). Попытка прочесть данные по адресу 0x0133C720 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005E8A3C (32-bit), Flags: Cmdre0, Thread: 0x3DCC (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76F883AC in C:\Windows\SYSTEM32\ntdll.dll: RtlGetCurrentServiceSessionId()
+# 1 0x76FCEB81 in C:\Windows\SYSTEM32\ntdll.dll: RtlConstructCrossVmMutexPath()
+# 2 0x76F87C96 in C:\Windows\SYSTEM32\ntdll.dll: RtlFreeHeap()
+# 3 0x75C67E09 in C:\Windows\System32\msvcrt.dll: free()
+
+# 4 0x0042C061 in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: CleanPointerBuffer() at C:/Program Files/CodeBlocks/CBProjects/Onegin/io.cpp (156):
+
+    154:     Assert(buffer != NULL, POINTER_IS_NULL);
+    155: 
+=>  156:     free(buffer);
+    157: 
+    158:     return 0;
+
+# 5 0x004579DB in C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe: main() at C:/Program Files/CodeBlocks/CBProjects/Onegin/main.cpp (25):
+
+     23: 
+     24: 
+=>   25:     CleanPointerBuffer((*field).lines_buffer);
+     26:     CleanCharBuffer((*field).chars_buffer);
+     27: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\program files\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2022 21:58:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2022 21:59:58
+
+Run file:	C:\Program Files\CodeBlocks\CBProjects\Onegin\bin\Debug\Onegin.exe
+Directory:	C:\Program Files\CodeBlocks\CBProjects\Onegin
+
+--------------------------------------------------
