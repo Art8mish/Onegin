@@ -93,8 +93,6 @@ int WriteLines(const char *output_file_name, char **lines_buffer, size_t lines_a
         fprintf(output_file, "%s\n", str_address);
     }
 
-    fprintf(output_file, "\n");
-
     fclose(output_file);
 
     return 0;

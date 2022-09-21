@@ -1,6 +1,8 @@
 
 #define INPUT_FILE_NAME "txt_files/onegin.txt"
-#define OUTPUT_FILE_NAME "txt_files/onegin_output.txt"
+#define FIRST_OUTPUT_FILE_NAME "txt_files/onegin_output_lefttoright.txt"
+#define SECOND_OUTPUT_FILE_NAME "txt_files/onegin_output_righttoleft.txt"
+#define THIRD_OUTPUT_FILE_NAME "txt_files/onegin_output_original.txt"
 
 #include "include/libraries.h"
 
@@ -13,13 +15,13 @@ int main(void)
 
     Sorting((*field).lines_buffer, (*field).lines_amount, Strcmp);
 
-    WriteLines(OUTPUT_FILE_NAME, (*field).lines_buffer, (*field).lines_amount);
+    WriteLines(FIRST_OUTPUT_FILE_NAME, (*field).lines_buffer, (*field).lines_amount);
 
     Sorting((*field).lines_buffer, (*field).lines_amount, ReversedStrcmp);
 
-    WriteLines(OUTPUT_FILE_NAME, (*field).lines_buffer, (*field).lines_amount);
+    WriteLines(SECOND_OUTPUT_FILE_NAME, (*field).lines_buffer, (*field).lines_amount);
 
-    WriteBuffer(OUTPUT_FILE_NAME, (*field).chars_buffer, (*field).lines_amount);
+    WriteBuffer(THIRD_OUTPUT_FILE_NAME, (*field).chars_buffer, (*field).lines_amount);
 
 
     printf("Program completed successfully.\n");
