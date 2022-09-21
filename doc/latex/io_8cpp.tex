@@ -1,0 +1,148 @@
+\hypertarget{io_8cpp}{}\doxysection{src/io.cpp File Reference}
+\label{io_8cpp}\index{src/io.cpp@{src/io.cpp}}
+{\ttfamily \#include \char`\"{}../include/libraries.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_working_field}{Working\+Field}} $\ast$ \mbox{\hyperlink{io_8cpp_af05909062b51e603462e3ad39c886cc8}{Create\+Working\+Field}} (const char $\ast$input\+\_\+file\+\_\+name)
+\item 
+int \mbox{\hyperlink{io_8cpp_af4ea7de4a18b9a1273c05b24323314ea}{Read\+File}} (const char $\ast$input\+\_\+file\+\_\+name, char $\ast$chars\+\_\+buffer, size\+\_\+t chars\+\_\+amount, char $\ast$$\ast$lines\+\_\+buffer)
+\item 
+int \mbox{\hyperlink{io_8cpp_a7bf6a64f097d345800a0516154cd447e}{Write\+Lines}} (const char $\ast$output\+\_\+file\+\_\+name, char $\ast$$\ast$lines\+\_\+buffer, size\+\_\+t lines\+\_\+amount)
+\item 
+int \mbox{\hyperlink{io_8cpp_a550984a7f2f74290e672c9a78a017159}{Write\+Buffer}} (const char $\ast$output\+\_\+file\+\_\+name, char $\ast$chars\+\_\+buffer, size\+\_\+t lines\+\_\+amount)
+\item 
+int \mbox{\hyperlink{io_8cpp_a47cce5371f74810230a55394fed77029}{Count\+Size}} (const char $\ast$file\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{io_8cpp_a47cce5371f74810230a55394fed77029}\label{io_8cpp_a47cce5371f74810230a55394fed77029}} 
+\index{io.cpp@{io.cpp}!CountSize@{CountSize}}
+\index{CountSize@{CountSize}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{CountSize()}{CountSize()}}
+{\footnotesize\ttfamily int Count\+Size (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+Counts size of file
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file\+\_\+name} & String with file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size of file (amount of chars)
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+return error number from enum Errors if error 
+\end{DoxyNote}
+
+
+Definition at line 127 of file io.\+cpp.
+
+\mbox{\Hypertarget{io_8cpp_af05909062b51e603462e3ad39c886cc8}\label{io_8cpp_af05909062b51e603462e3ad39c886cc8}} 
+\index{io.cpp@{io.cpp}!CreateWorkingField@{CreateWorkingField}}
+\index{CreateWorkingField@{CreateWorkingField}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{CreateWorkingField()}{CreateWorkingField()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_working_field}{Working\+Field}}$\ast$ Create\+Working\+Field (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+file\+\_\+name }\end{DoxyParamCaption})}
+
+Create struct for program Onegin
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input\+\_\+file\+\_\+name} & String with input file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to created struct
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+return NULL if error 
+\end{DoxyNote}
+
+
+Definition at line 4 of file io.\+cpp.
+
+\mbox{\Hypertarget{io_8cpp_af4ea7de4a18b9a1273c05b24323314ea}\label{io_8cpp_af4ea7de4a18b9a1273c05b24323314ea}} 
+\index{io.cpp@{io.cpp}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily int Read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+file\+\_\+name,  }\item[{char $\ast$}]{chars\+\_\+buffer,  }\item[{size\+\_\+t}]{chars\+\_\+amount,  }\item[{char $\ast$$\ast$}]{lines\+\_\+buffer }\end{DoxyParamCaption})}
+
+Reading file by filling buffer
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input\+\_\+file\+\_\+name} & String with input file name \\
+\hline
+\mbox{\texttt{ in}}  & {\em chars\+\_\+buffer} & Pointer to buffer for file \\
+\hline
+\mbox{\texttt{ in}}  & {\em chars\+\_\+amount} & File size (amount of chars) \\
+\hline
+\mbox{\texttt{ in}}  & {\em lines\+\_\+buffer} & Pointer to buffer with pointers to lines\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of lines
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+return error number from enum Errors if error 
+\end{DoxyNote}
+
+
+Definition at line 27 of file io.\+cpp.
+
+\mbox{\Hypertarget{io_8cpp_a550984a7f2f74290e672c9a78a017159}\label{io_8cpp_a550984a7f2f74290e672c9a78a017159}} 
+\index{io.cpp@{io.cpp}!WriteBuffer@{WriteBuffer}}
+\index{WriteBuffer@{WriteBuffer}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{WriteBuffer()}{WriteBuffer()}}
+{\footnotesize\ttfamily int Write\+Buffer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{output\+\_\+file\+\_\+name,  }\item[{char $\ast$}]{chars\+\_\+buffer,  }\item[{size\+\_\+t}]{lines\+\_\+amount }\end{DoxyParamCaption})}
+
+Writing buffer of chars
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em output\+\_\+file\+\_\+name} & String with output file name \\
+\hline
+\mbox{\texttt{ in}}  & {\em chars\+\_\+buffer} & Pointer to buffer with chars \\
+\hline
+\mbox{\texttt{ in}}  & {\em lines\+\_\+amount} & Amount of lines\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if correct complete
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+return error number from enum Errors if error 
+\end{DoxyNote}
+
+
+Definition at line 103 of file io.\+cpp.
+
+\mbox{\Hypertarget{io_8cpp_a7bf6a64f097d345800a0516154cd447e}\label{io_8cpp_a7bf6a64f097d345800a0516154cd447e}} 
+\index{io.cpp@{io.cpp}!WriteLines@{WriteLines}}
+\index{WriteLines@{WriteLines}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{WriteLines()}{WriteLines()}}
+{\footnotesize\ttfamily int Write\+Lines (\begin{DoxyParamCaption}\item[{const char $\ast$}]{output\+\_\+file\+\_\+name,  }\item[{char $\ast$$\ast$}]{lines\+\_\+buffer,  }\item[{size\+\_\+t}]{lines\+\_\+amount }\end{DoxyParamCaption})}
+
+Writing lines from lines\+\_\+buffer
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em output\+\_\+file\+\_\+name} & String with output file name \\
+\hline
+\mbox{\texttt{ in}}  & {\em lines\+\_\+buffer} & Pointer to buffer with pointers to lines \\
+\hline
+\mbox{\texttt{ in}}  & {\em lines\+\_\+amount} & Amount of lines\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if correct complete
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+return error number from enum Errors if error 
+\end{DoxyNote}
+
+
+Definition at line 80 of file io.\+cpp.
+

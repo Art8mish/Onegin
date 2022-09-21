@@ -73,9 +73,4 @@ int WriteBuffer(const char *output_file_name, char *chars_buffer, size_t lines_a
 int CountSize(const char *file_name);
 
 
-int CleanCharBuffer(char *buffer);
-
-int CleanPointerBuffer(char **buffer);
-
-
 #endif // IO_H_INCLUDED

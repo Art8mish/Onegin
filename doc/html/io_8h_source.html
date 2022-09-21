@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Onegin: io.h Source File</title>
+<title>Onegin: include/io.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,7 +45,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,51 +59,60 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">io.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IO_H_INCLUDED</span></div>
+<a href="io_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IO_H_INCLUDED</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IO_H_INCLUDED</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span><span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_working_field.html">WorkingField</a> *CreateWorkingField(<span class="keyword">const</span> <span class="keywordtype">char</span> *input_file_name);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_working_field.html">WorkingField</a> *<a class="code" href="io_8h.html#af05909062b51e603462e3ad39c886cc8">CreateWorkingField</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *input_file_name);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span><span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> ReadFile(<span class="keyword">const</span> <span class="keywordtype">char</span> *input_file_name, <span class="keywordtype">char</span> *chars_buffer, <span class="keywordtype">size_t</span> chars_amount, <span class="keywordtype">char</span> **lines_buffer);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> <a class="code" href="io_8h.html#af4ea7de4a18b9a1273c05b24323314ea">ReadFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *input_file_name, <span class="keywordtype">char</span> *<a class="code" href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">chars_buffer</a>, <span class="keywordtype">size_t</span> <a class="code" href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">chars_amount</a>, <span class="keywordtype">char</span> **<a class="code" href="struct_working_field.html#aec6d07220197bc5431aef7eb4a58f965">lines_buffer</a>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span> WriteLines(<span class="keyword">const</span> <span class="keywordtype">char</span> *output_file_name, <span class="keywordtype">char</span> **lines_buffer, <span class="keywordtype">size_t</span> lines_amount);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span> <a class="code" href="io_8h.html#a7bf6a64f097d345800a0516154cd447e">WriteLines</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *output_file_name, <span class="keywordtype">char</span> **<a class="code" href="struct_working_field.html#aec6d07220197bc5431aef7eb4a58f965">lines_buffer</a>, <span class="keywordtype">size_t</span> <a class="code" href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">lines_amount</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">int</span> WriteBuffer(<span class="keyword">const</span> <span class="keywordtype">char</span> *output_file_name, <span class="keywordtype">char</span> *chars_buffer, <span class="keywordtype">size_t</span> lines_amount);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">int</span> <a class="code" href="io_8h.html#a550984a7f2f74290e672c9a78a017159">WriteBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *output_file_name, <span class="keywordtype">char</span> *<a class="code" href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">chars_buffer</a>, <span class="keywordtype">size_t</span> <a class="code" href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">lines_amount</a>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">int</span> CountSize(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_name);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">int</span> <a class="code" href="io_8h.html#a47cce5371f74810230a55394fed77029">CountSize</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_name);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">int</span> CleanCharBuffer(<span class="keywordtype">char</span> *buffer);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">int</span> CleanPointerBuffer(<span class="keywordtype">char</span> **buffer);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// IO_H_INCLUDED</span></div>
-<div class="ttc" id="astruct_working_field_html"><div class="ttname"><a href="struct_working_field.html">WorkingField</a></div><div class="ttdef"><b>Definition:</b> libraries.h:55</div></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// IO_H_INCLUDED</span></div>
+<div class="ttc" id="aio_8h_html_a47cce5371f74810230a55394fed77029"><div class="ttname"><a href="io_8h.html#a47cce5371f74810230a55394fed77029">CountSize</a></div><div class="ttdeci">int CountSize(const char *file_name)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cpp_source.html#l00127">io.cpp:127</a></div></div>
+<div class="ttc" id="aio_8h_html_a550984a7f2f74290e672c9a78a017159"><div class="ttname"><a href="io_8h.html#a550984a7f2f74290e672c9a78a017159">WriteBuffer</a></div><div class="ttdeci">int WriteBuffer(const char *output_file_name, char *chars_buffer, size_t lines_amount)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cpp_source.html#l00103">io.cpp:103</a></div></div>
+<div class="ttc" id="aio_8h_html_a7bf6a64f097d345800a0516154cd447e"><div class="ttname"><a href="io_8h.html#a7bf6a64f097d345800a0516154cd447e">WriteLines</a></div><div class="ttdeci">int WriteLines(const char *output_file_name, char **lines_buffer, size_t lines_amount)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cpp_source.html#l00080">io.cpp:80</a></div></div>
+<div class="ttc" id="aio_8h_html_af05909062b51e603462e3ad39c886cc8"><div class="ttname"><a href="io_8h.html#af05909062b51e603462e3ad39c886cc8">CreateWorkingField</a></div><div class="ttdeci">struct WorkingField * CreateWorkingField(const char *input_file_name)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cpp_source.html#l00004">io.cpp:4</a></div></div>
+<div class="ttc" id="aio_8h_html_af4ea7de4a18b9a1273c05b24323314ea"><div class="ttname"><a href="io_8h.html#af4ea7de4a18b9a1273c05b24323314ea">ReadFile</a></div><div class="ttdeci">int ReadFile(const char *input_file_name, char *chars_buffer, size_t chars_amount, char **lines_buffer)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cpp_source.html#l00027">io.cpp:27</a></div></div>
+<div class="ttc" id="astruct_working_field_html"><div class="ttname"><a href="struct_working_field.html">WorkingField</a></div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00054">libraries.h:55</a></div></div>
+<div class="ttc" id="astruct_working_field_html_a4c03961b2e7f5ac0c373548fe67d2b0c"><div class="ttname"><a href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">WorkingField::lines_amount</a></div><div class="ttdeci">int lines_amount</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00060">libraries.h:60</a></div></div>
+<div class="ttc" id="astruct_working_field_html_aabee8ed95db7ce1b56b0be12a618d018"><div class="ttname"><a href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">WorkingField::chars_buffer</a></div><div class="ttdeci">char * chars_buffer</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00057">libraries.h:57</a></div></div>
+<div class="ttc" id="astruct_working_field_html_aca3dea67d2d2575f88af87c96eecbdd6"><div class="ttname"><a href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">WorkingField::chars_amount</a></div><div class="ttdeci">int chars_amount</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00056">libraries.h:56</a></div></div>
+<div class="ttc" id="astruct_working_field_html_aec6d07220197bc5431aef7eb4a58f965"><div class="ttname"><a href="struct_working_field.html#aec6d07220197bc5431aef7eb4a58f965">WorkingField::lines_buffer</a></div><div class="ttdeci">char ** lines_buffer</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00059">libraries.h:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

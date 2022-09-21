@@ -22,9 +22,6 @@ int main(void)
     WriteBuffer(OUTPUT_FILE_NAME, (*field).chars_buffer, (*field).lines_amount);
 
 
-    CleanPointerBuffer((*field).lines_buffer);
-    CleanCharBuffer((*field).chars_buffer);
-
     printf("Program completed successfully.\n");
 
     return 0;

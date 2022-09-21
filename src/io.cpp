@@ -70,7 +70,6 @@ int ReadFile(const char *input_file_name, char *chars_buffer, size_t chars_amoun
     }
 
     *chars_buffer = '\0';
-    *(chars_buffer + 1) = EOF;
 
     lines_count++;
 
@@ -139,22 +138,3 @@ int CountSize(const char *file_name)
 
     return file_stat.st_size;
 }
-
-int CleanCharBuffer(char *buffer)
-{
-    Assert(buffer != NULL, POINTER_IS_NULL);
-
-    free(buffer);
-
-    return 0;
-}
-
-int CleanPointerBuffer(char **buffer)
-{
-    Assert(buffer != NULL, POINTER_IS_NULL);
-
-    free(buffer);
-
-    return 0;
-}
-

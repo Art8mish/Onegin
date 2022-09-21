@@ -1,0 +1,96 @@
+\hypertarget{sort_8cpp}{}\doxysection{src/sort.cpp File Reference}
+\label{sort_8cpp}\index{src/sort.cpp@{src/sort.cpp}}
+{\ttfamily \#include \char`\"{}../include/libraries.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{sort_8cpp_a840e210dbf43435257f691335f53ba3d}{Sorting}} (char $\ast$$\ast$lines\+\_\+buffer, size\+\_\+t lines\+\_\+amount, int($\ast$strcmp\+\_\+type)(char $\ast$str1, char $\ast$str2))
+\item 
+int \mbox{\hyperlink{sort_8cpp_a299f45fcacba3604fcdcaea043b4b316}{Strcmp}} (char $\ast$str1, char $\ast$str2)
+\item 
+int \mbox{\hyperlink{sort_8cpp_a74c9e2e0fc76c002c933a80905df4b38}{Reversed\+Strcmp}} (char $\ast$str1, char $\ast$str2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sort_8cpp_a74c9e2e0fc76c002c933a80905df4b38}\label{sort_8cpp_a74c9e2e0fc76c002c933a80905df4b38}} 
+\index{sort.cpp@{sort.cpp}!ReversedStrcmp@{ReversedStrcmp}}
+\index{ReversedStrcmp@{ReversedStrcmp}!sort.cpp@{sort.cpp}}
+\doxysubsubsection{\texorpdfstring{ReversedStrcmp()}{ReversedStrcmp()}}
+{\footnotesize\ttfamily int Reversed\+Strcmp (\begin{DoxyParamCaption}\item[{char $\ast$}]{str1,  }\item[{char $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Compares two strings from right to left
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str1} & Pointer to the first string \\
+\hline
+\mbox{\texttt{ in}}  & {\em str2} & Pointer to the second string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Difference of first different symbols codes in ASCII
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Returns 0 if strings are similar Returns positive number if first string is longer than second string; Returns negative number if second string is longer than first string; 
+
+Return -\/1 if pointer is NULL 
+\end{DoxyNote}
+
+
+Definition at line 60 of file sort.\+cpp.
+
+\mbox{\Hypertarget{sort_8cpp_a840e210dbf43435257f691335f53ba3d}\label{sort_8cpp_a840e210dbf43435257f691335f53ba3d}} 
+\index{sort.cpp@{sort.cpp}!Sorting@{Sorting}}
+\index{Sorting@{Sorting}!sort.cpp@{sort.cpp}}
+\doxysubsubsection{\texorpdfstring{Sorting()}{Sorting()}}
+{\footnotesize\ttfamily int Sorting (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{lines\+\_\+buffer,  }\item[{size\+\_\+t}]{lines\+\_\+amount,  }\item[{int($\ast$)(char $\ast$str1, char $\ast$str2)}]{strcmp\+\_\+type }\end{DoxyParamCaption})}
+
+Sorts lines in buffer of lines with Bubble\+Sort
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines\+\_\+buffer} & Pointer to buffer with pointers to lines \\
+\hline
+\mbox{\texttt{ in}}  & {\em lines\+\_\+amount} & Amount of lines \\
+\hline
+\mbox{\texttt{ in}}  & {\em strcmp\+\_\+type} & Pointer to function of comparison\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if correct complete
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+return error number from enum Errors if error 
+\end{DoxyNote}
+
+
+Definition at line 6 of file sort.\+cpp.
+
+\mbox{\Hypertarget{sort_8cpp_a299f45fcacba3604fcdcaea043b4b316}\label{sort_8cpp_a299f45fcacba3604fcdcaea043b4b316}} 
+\index{sort.cpp@{sort.cpp}!Strcmp@{Strcmp}}
+\index{Strcmp@{Strcmp}!sort.cpp@{sort.cpp}}
+\doxysubsubsection{\texorpdfstring{Strcmp()}{Strcmp()}}
+{\footnotesize\ttfamily int Strcmp (\begin{DoxyParamCaption}\item[{char $\ast$}]{str1,  }\item[{char $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+Compares two strings from left to right
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str1} & Pointer to the first string \\
+\hline
+\mbox{\texttt{ in}}  & {\em str2} & Pointer to the second string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Difference of first different symbols codes in ASCII
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Returns 0 if strings are similar Returns positive number if first string is longer than second string; Returns negative number if second string is longer than first string; 
+
+Return -\/1 if pointer is NULL 
+\end{DoxyNote}
+
+
+Definition at line 34 of file sort.\+cpp.
+

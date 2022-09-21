@@ -1,0 +1,124 @@
+\hypertarget{libraries_8h}{}\doxysection{include/libraries.h File Reference}
+\label{libraries_8h}\index{include/libraries.h@{include/libraries.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$TXlib.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sorting\+\_\+func.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}io.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_working_field}{Working\+Field}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{libraries_8h_a7677d585c94dee072808b9ef76dc178b}{STR\+\_\+\+MAXLEN}}~1000
+\item 
+\#define \mbox{\hyperlink{libraries_8h_adf1c8b620db31b9b46185c7d866b1d28}{INPUT\+\_\+\+FILE\+\_\+\+NAME}}~\char`\"{}onegin.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\+\_\+\+ASSERT}}(condition)
+\item 
+\#define \mbox{\hyperlink{libraries_8h_aeb811c12cf93fdfa6b434c671a7fd9f1}{Assert}}(condition,  error\+\_\+type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76b}{Errors}} \{ \mbox{\hyperlink{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae}{POINTER\+\_\+\+IS\+\_\+\+NULL}} = -\/1
+, \mbox{\hyperlink{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52}{OPENING\+\_\+\+FILE\+\_\+\+ERROR}} = -\/2
+, \mbox{\hyperlink{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da}{STAT\+\_\+\+ERROR}} = -\/3
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{libraries_8h_aeb811c12cf93fdfa6b434c671a7fd9f1}\label{libraries_8h_aeb811c12cf93fdfa6b434c671a7fd9f1}} 
+\index{libraries.h@{libraries.h}!Assert@{Assert}}
+\index{Assert@{Assert}!libraries.h@{libraries.h}}
+\doxysubsubsection{\texorpdfstring{Assert}{Assert}}
+{\footnotesize\ttfamily \#define Assert(\begin{DoxyParamCaption}\item[{}]{condition,  }\item[{}]{error\+\_\+type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{            \mbox{\hyperlink{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\_ASSERT}}(condition);             \(\backslash\)}
+\DoxyCodeLine{            do                                  \(\backslash\)}
+\DoxyCodeLine{            \{                                   \(\backslash\)}
+\DoxyCodeLine{                if (!(condition))               \(\backslash\)}
+\DoxyCodeLine{                \{                               \(\backslash\)}
+\DoxyCodeLine{                  \textcolor{comment}{/*error\_code = error\_type;*/}  \(\backslash\)}
+\DoxyCodeLine{                    return error\_type;          \(\backslash\)}
+\DoxyCodeLine{                \}                               \(\backslash\)}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{while}(\textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+Definition at line 35 of file libraries.\+h.
+
+\mbox{\Hypertarget{libraries_8h_adf1c8b620db31b9b46185c7d866b1d28}\label{libraries_8h_adf1c8b620db31b9b46185c7d866b1d28}} 
+\index{libraries.h@{libraries.h}!INPUT\_FILE\_NAME@{INPUT\_FILE\_NAME}}
+\index{INPUT\_FILE\_NAME@{INPUT\_FILE\_NAME}!libraries.h@{libraries.h}}
+\doxysubsubsection{\texorpdfstring{INPUT\_FILE\_NAME}{INPUT\_FILE\_NAME}}
+{\footnotesize\ttfamily \#define INPUT\+\_\+\+FILE\+\_\+\+NAME~\char`\"{}onegin.\+txt\char`\"{}}
+
+
+
+Definition at line 15 of file libraries.\+h.
+
+\mbox{\Hypertarget{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}\label{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}} 
+\index{libraries.h@{libraries.h}!SOFT\_ASSERT@{SOFT\_ASSERT}}
+\index{SOFT\_ASSERT@{SOFT\_ASSERT}!libraries.h@{libraries.h}}
+\doxysubsubsection{\texorpdfstring{SOFT\_ASSERT}{SOFT\_ASSERT}}
+{\footnotesize\ttfamily \#define SOFT\+\_\+\+ASSERT(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{            \textcolor{keywordflow}{do}                                                            \(\backslash\)}
+\DoxyCodeLine{            \{                                                             \(\backslash\)}
+\DoxyCodeLine{                if (!(condition))                                         \(\backslash\)}
+\DoxyCodeLine{                    printf(\textcolor{stringliteral}{"{}Error in \%s; file: \%s; num of line: \%d \(\backslash\)n"{}},   \(\backslash\)}
+\DoxyCodeLine{                           \#condition, \_\_FILE\_\_, \_\_LINE\_\_);               \(\backslash\)}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{while}(\textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+Definition at line 22 of file libraries.\+h.
+
+\mbox{\Hypertarget{libraries_8h_a7677d585c94dee072808b9ef76dc178b}\label{libraries_8h_a7677d585c94dee072808b9ef76dc178b}} 
+\index{libraries.h@{libraries.h}!STR\_MAXLEN@{STR\_MAXLEN}}
+\index{STR\_MAXLEN@{STR\_MAXLEN}!libraries.h@{libraries.h}}
+\doxysubsubsection{\texorpdfstring{STR\_MAXLEN}{STR\_MAXLEN}}
+{\footnotesize\ttfamily \#define STR\+\_\+\+MAXLEN~1000}
+
+
+
+Definition at line 11 of file libraries.\+h.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76b}\label{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76b}} 
+\index{libraries.h@{libraries.h}!Errors@{Errors}}
+\index{Errors@{Errors}!libraries.h@{libraries.h}}
+\doxysubsubsection{\texorpdfstring{Errors}{Errors}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76b}{Errors}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POINTER\_IS\_NULL@{POINTER\_IS\_NULL}!libraries.h@{libraries.h}}\index{libraries.h@{libraries.h}!POINTER\_IS\_NULL@{POINTER\_IS\_NULL}}}\mbox{\Hypertarget{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae}\label{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae}} 
+POINTER\+\_\+\+IS\+\_\+\+NULL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPENING\_FILE\_ERROR@{OPENING\_FILE\_ERROR}!libraries.h@{libraries.h}}\index{libraries.h@{libraries.h}!OPENING\_FILE\_ERROR@{OPENING\_FILE\_ERROR}}}\mbox{\Hypertarget{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52}\label{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52}} 
+OPENING\+\_\+\+FILE\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STAT\_ERROR@{STAT\_ERROR}!libraries.h@{libraries.h}}\index{libraries.h@{libraries.h}!STAT\_ERROR@{STAT\_ERROR}}}\mbox{\Hypertarget{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da}\label{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da}} 
+STAT\+\_\+\+ERROR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 46 of file libraries.\+h.
+
