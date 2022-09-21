@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="595" topLine="0" />
-		<BrowseMarks positions="434,597,679,683" />
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="679" topLine="2" />
+		<BrowseMarks positions="684,774" />
 		<Book_Marks positions="315" />
 	</File>
-	<File name="src\io.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="23" topLine="0" />
-		<BrowseMarks positions="3341,578" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="src\sort.cpp" open="1" top="0" tabpos="5">
+	<File name="src\sort.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="34" topLine="0" />
 		<BrowseMarks positions="2" />
+	</File>
+	<File name="include\libraries.h" open="1" top="0" tabpos="4">
+		<Cursor position="203" topLine="39" />
+		<BrowseMarks positions="0,128,266,203" />
 		<Book_Marks positions="" />
 	</File>
-	<File name="include\libraries.h" open="1" top="0" tabpos="2">
-		<Cursor position="138" topLine="0" />
-		<BrowseMarks positions="0,128" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="include\io.h" open="1" top="0" tabpos="3">
-		<Cursor position="0" topLine="0" />
+	<File name="include\io.h" open="1" top="0" tabpos="5">
+		<Cursor position="2675" topLine="51" />
 		<BrowseMarks positions="2675" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src\io.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="578" topLine="7" />
+		<BrowseMarks positions="562,3306" />
 		<Book_Marks positions="" />
 	</File>
 </BrowseTracker_layout_file>
