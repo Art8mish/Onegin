@@ -4,10 +4,10 @@ var indexSectionsWithContent =
   1: "w",
   2: "ilms",
   3: "cmrsw",
-  4: "cl",
+  4: "clp",
   5: "e",
   6: "ops",
-  7: "aios"
+  7: "as"
 };
 
 var indexSectionNames =

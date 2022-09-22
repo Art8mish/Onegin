@@ -13,10 +13,6 @@ struct \mbox{\hyperlink{struct_working_field}{Working\+Field}}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{libraries_8h_a7677d585c94dee072808b9ef76dc178b}{STR\+\_\+\+MAXLEN}}~1000
-\item 
-\#define \mbox{\hyperlink{libraries_8h_adf1c8b620db31b9b46185c7d866b1d28}{INPUT\+\_\+\+FILE\+\_\+\+NAME}}~\char`\"{}onegin.\+txt\char`\"{}
-\item 
 \#define \mbox{\hyperlink{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\+\_\+\+ASSERT}}(condition)
 \item 
 \#define \mbox{\hyperlink{libraries_8h_aeb811c12cf93fdfa6b434c671a7fd9f1}{Assert}}(condition,  error\+\_\+type)
@@ -40,30 +36,20 @@ enum \mbox{\hyperlink{libraries_8h_a8fb872c72e116bbd3eba31f48d78e76b}{Errors}} \
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{            \mbox{\hyperlink{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\_ASSERT}}(condition);             \(\backslash\)}
-\DoxyCodeLine{            do                                  \(\backslash\)}
-\DoxyCodeLine{            \{                                   \(\backslash\)}
-\DoxyCodeLine{                if (!(condition))               \(\backslash\)}
-\DoxyCodeLine{                \{                               \(\backslash\)}
-\DoxyCodeLine{                  \textcolor{comment}{/*error\_code = error\_type;*/}  \(\backslash\)}
-\DoxyCodeLine{                    return error\_type;          \(\backslash\)}
-\DoxyCodeLine{                \}                               \(\backslash\)}
-\DoxyCodeLine{            \} \textcolor{keywordflow}{while}(\textcolor{keyword}{false})}
+\DoxyCodeLine{        \mbox{\hyperlink{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}{SOFT\_ASSERT}}(condition);             \(\backslash\)}
+\DoxyCodeLine{        do                                  \(\backslash\)}
+\DoxyCodeLine{        \{                                   \(\backslash\)}
+\DoxyCodeLine{            if (!(condition))               \(\backslash\)}
+\DoxyCodeLine{            \{                               \(\backslash\)}
+\DoxyCodeLine{              \textcolor{comment}{/*error\_code = error\_type;*/}  \(\backslash\)}
+\DoxyCodeLine{                return error\_type;          \(\backslash\)}
+\DoxyCodeLine{            \}                               \(\backslash\)}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{while}(\textcolor{keyword}{false})}
 
 \end{DoxyCode}
 
 
-Definition at line 35 of file libraries.\+h.
-
-\mbox{\Hypertarget{libraries_8h_adf1c8b620db31b9b46185c7d866b1d28}\label{libraries_8h_adf1c8b620db31b9b46185c7d866b1d28}} 
-\index{libraries.h@{libraries.h}!INPUT\_FILE\_NAME@{INPUT\_FILE\_NAME}}
-\index{INPUT\_FILE\_NAME@{INPUT\_FILE\_NAME}!libraries.h@{libraries.h}}
-\doxysubsubsection{\texorpdfstring{INPUT\_FILE\_NAME}{INPUT\_FILE\_NAME}}
-{\footnotesize\ttfamily \#define INPUT\+\_\+\+FILE\+\_\+\+NAME~\char`\"{}onegin.\+txt\char`\"{}}
-
-
-
-Definition at line 15 of file libraries.\+h.
+Definition at line 29 of file libraries.\+h.
 
 \mbox{\Hypertarget{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}\label{libraries_8h_a654a682cd728e4926b7fbe94e85e7094}} 
 \index{libraries.h@{libraries.h}!SOFT\_ASSERT@{SOFT\_ASSERT}}
@@ -83,17 +69,7 @@ Definition at line 15 of file libraries.\+h.
 \end{DoxyCode}
 
 
-Definition at line 22 of file libraries.\+h.
-
-\mbox{\Hypertarget{libraries_8h_a7677d585c94dee072808b9ef76dc178b}\label{libraries_8h_a7677d585c94dee072808b9ef76dc178b}} 
-\index{libraries.h@{libraries.h}!STR\_MAXLEN@{STR\_MAXLEN}}
-\index{STR\_MAXLEN@{STR\_MAXLEN}!libraries.h@{libraries.h}}
-\doxysubsubsection{\texorpdfstring{STR\_MAXLEN}{STR\_MAXLEN}}
-{\footnotesize\ttfamily \#define STR\+\_\+\+MAXLEN~1000}
-
-
-
-Definition at line 11 of file libraries.\+h.
+Definition at line 16 of file libraries.\+h.
 
 
 
@@ -120,5 +96,5 @@ STAT\+\_\+\+ERROR&\\
 \end{DoxyEnumFields}
 
 
-Definition at line 46 of file libraries.\+h.
+Definition at line 40 of file libraries.\+h.
 

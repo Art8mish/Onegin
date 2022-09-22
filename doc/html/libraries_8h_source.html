@@ -79,71 +79,64 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sorting__func_8h.html">sorting_func.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="io_8h.html">io.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="libraries_8h.html#a7677d585c94dee072808b9ef76dc178b">   11</a></span>&#160;<span class="preprocessor">#define STR_MAXLEN 1000</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#define SOFT_ASSERT</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef INPUT_FILE_NAME</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="libraries_8h.html#adf1c8b620db31b9b46185c7d866b1d28">   15</a></span>&#160;<span class="preprocessor">#define INPUT_FILE_NAME &quot;onegin.txt&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//#define SOFT_ASSERT</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef SOFT_ASSERT</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">   22</a></span>&#160;<span class="preprocessor">#define SOFT_ASSERT(condition)                                            \</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">            do                                                            \</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">            {                                                             \</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">                if (!(condition))                                         \</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">                    printf(&quot;Error in %s; file: %s; num of line: %d \n&quot;</span>,   \</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                           #condition, __FILE__, __LINE__);               \</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            } while(false)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define SOFT_ASSERT(condition)</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="libraries_8h.html#aeb811c12cf93fdfa6b434c671a7fd9f1">   35</a></span>&#160;<span class="preprocessor">#define Assert(condition, error_type)           \</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">            SOFT_ASSERT(condition);             \</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">            do                                  \</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">            {                                   \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">                if (!(condition))               \</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">                {                               \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">                  </span><span class="comment">/*error_code = error_type;*/</span><span class="preprocessor">  \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">                    return error_type;          \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                }                               \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">            } while(false)</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76b">   46</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76b">Errors</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae">   48</a></span>&#160;    <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae">POINTER_IS_NULL</a> = -1,</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52">   49</a></span>&#160;    <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52">OPENING_FILE_ERROR</a> = -2,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da">STAT_ERROR</a> = -3</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da">   51</a></span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_working_field.html">   54</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_working_field.html">WorkingField</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">chars_amount</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">   57</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">chars_buffer</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct_working_field.html#aec6d07220197bc5431aef7eb4a58f965">   59</a></span>&#160;    <span class="keywordtype">char</span> **<a class="code" href="struct_working_field.html#aec6d07220197bc5431aef7eb4a58f965">lines_buffer</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">lines_amount</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LIBRARIES_H_INCLUDED</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef SOFT_ASSERT</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">   16</a></span>&#160;<span class="preprocessor">#define SOFT_ASSERT(condition)                                            \</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">            do                                                            \</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">            {                                                             \</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">                if (!(condition))                                         \</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">                    printf(&quot;Error in %s; file: %s; num of line: %d \n&quot;</span>,   \</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                           #condition, __FILE__, __LINE__);               \</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            } while(false)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define SOFT_ASSERT(condition)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="libraries_8h.html#aeb811c12cf93fdfa6b434c671a7fd9f1">   29</a></span>&#160;<span class="preprocessor">#define Assert(condition, error_type)       \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        SOFT_ASSERT(condition);             \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">        do                                  \</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">        {                                   \</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">            if (!(condition))               \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">            {                               \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">              </span><span class="comment">/*error_code = error_type;*/</span><span class="preprocessor">  \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">                return error_type;          \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">            }                               \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">        } while(false)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76b">   40</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76b">Errors</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae">   42</a></span>&#160;    <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae">POINTER_IS_NULL</a>    = -1,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52">   43</a></span>&#160;    <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52">OPENING_FILE_ERROR</a> = -2,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da">STAT_ERROR</a>         = -3</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da">   45</a></span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_working_field.html">   48</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_working_field.html">WorkingField</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">   50</a></span>&#160;    <span class="keywordtype">int</span>    <a class="code" href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">chars_amount</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">   51</a></span>&#160;    <span class="keywordtype">char</span>  *<a class="code" href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">chars_buffer</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_working_field.html#af7839d0583297d3a630488b3c1a3289d">   52</a></span>&#160;    <span class="keywordtype">char</span> **<a class="code" href="struct_working_field.html#af7839d0583297d3a630488b3c1a3289d">pointers_buffer</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">   53</a></span>&#160;    <span class="keywordtype">int</span>    <a class="code" href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">lines_amount</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// LIBRARIES_H_INCLUDED</span></div>
 <div class="ttc" id="aio_8h_html"><div class="ttname"><a href="io_8h.html">io.h</a></div></div>
-<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76b"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76b">Errors</a></div><div class="ttdeci">Errors</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00046">libraries.h:47</a></div></div>
-<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae">POINTER_IS_NULL</a></div><div class="ttdeci">@ POINTER_IS_NULL</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00048">libraries.h:48</a></div></div>
-<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da">STAT_ERROR</a></div><div class="ttdeci">@ STAT_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00051">libraries.h:50</a></div></div>
-<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52">OPENING_FILE_ERROR</a></div><div class="ttdeci">@ OPENING_FILE_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00049">libraries.h:49</a></div></div>
+<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76b"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76b">Errors</a></div><div class="ttdeci">Errors</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00040">libraries.h:41</a></div></div>
+<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba2327031c7ca47444aad9d25fa2ea2dae">POINTER_IS_NULL</a></div><div class="ttdeci">@ POINTER_IS_NULL</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00042">libraries.h:42</a></div></div>
+<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da">STAT_ERROR</a></div><div class="ttdeci">@ STAT_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00045">libraries.h:44</a></div></div>
+<div class="ttc" id="alibraries_8h_html_a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52"><div class="ttname"><a href="libraries_8h.html#a8fb872c72e116bbd3eba31f48d78e76baf634551966ebf480b55d80cf1b788b52">OPENING_FILE_ERROR</a></div><div class="ttdeci">@ OPENING_FILE_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00043">libraries.h:43</a></div></div>
 <div class="ttc" id="asorting__func_8h_html"><div class="ttname"><a href="sorting__func_8h.html">sorting_func.h</a></div></div>
-<div class="ttc" id="astruct_working_field_html"><div class="ttname"><a href="struct_working_field.html">WorkingField</a></div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00054">libraries.h:55</a></div></div>
-<div class="ttc" id="astruct_working_field_html_a4c03961b2e7f5ac0c373548fe67d2b0c"><div class="ttname"><a href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">WorkingField::lines_amount</a></div><div class="ttdeci">int lines_amount</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00060">libraries.h:60</a></div></div>
-<div class="ttc" id="astruct_working_field_html_aabee8ed95db7ce1b56b0be12a618d018"><div class="ttname"><a href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">WorkingField::chars_buffer</a></div><div class="ttdeci">char * chars_buffer</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00057">libraries.h:57</a></div></div>
-<div class="ttc" id="astruct_working_field_html_aca3dea67d2d2575f88af87c96eecbdd6"><div class="ttname"><a href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">WorkingField::chars_amount</a></div><div class="ttdeci">int chars_amount</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00056">libraries.h:56</a></div></div>
-<div class="ttc" id="astruct_working_field_html_aec6d07220197bc5431aef7eb4a58f965"><div class="ttname"><a href="struct_working_field.html#aec6d07220197bc5431aef7eb4a58f965">WorkingField::lines_buffer</a></div><div class="ttdeci">char ** lines_buffer</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00059">libraries.h:59</a></div></div>
+<div class="ttc" id="astruct_working_field_html"><div class="ttname"><a href="struct_working_field.html">WorkingField</a></div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00048">libraries.h:49</a></div></div>
+<div class="ttc" id="astruct_working_field_html_a4c03961b2e7f5ac0c373548fe67d2b0c"><div class="ttname"><a href="struct_working_field.html#a4c03961b2e7f5ac0c373548fe67d2b0c">WorkingField::lines_amount</a></div><div class="ttdeci">int lines_amount</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00053">libraries.h:53</a></div></div>
+<div class="ttc" id="astruct_working_field_html_aabee8ed95db7ce1b56b0be12a618d018"><div class="ttname"><a href="struct_working_field.html#aabee8ed95db7ce1b56b0be12a618d018">WorkingField::chars_buffer</a></div><div class="ttdeci">char * chars_buffer</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00051">libraries.h:51</a></div></div>
+<div class="ttc" id="astruct_working_field_html_aca3dea67d2d2575f88af87c96eecbdd6"><div class="ttname"><a href="struct_working_field.html#aca3dea67d2d2575f88af87c96eecbdd6">WorkingField::chars_amount</a></div><div class="ttdeci">int chars_amount</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00050">libraries.h:50</a></div></div>
+<div class="ttc" id="astruct_working_field_html_af7839d0583297d3a630488b3c1a3289d"><div class="ttname"><a href="struct_working_field.html#af7839d0583297d3a630488b3c1a3289d">WorkingField::pointers_buffer</a></div><div class="ttdeci">char ** pointers_buffer</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00052">libraries.h:52</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

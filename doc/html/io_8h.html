@@ -78,10 +78,10 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:af05909062b51e603462e3ad39c886cc8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_working_field.html">WorkingField</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#af05909062b51e603462e3ad39c886cc8">CreateWorkingField</a> (const char *input_file_name)</td></tr>
 <tr class="separator:af05909062b51e603462e3ad39c886cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ea7de4a18b9a1273c05b24323314ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#af4ea7de4a18b9a1273c05b24323314ea">ReadFile</a> (const char *input_file_name, char *chars_buffer, size_t chars_amount, char **lines_buffer)</td></tr>
-<tr class="separator:af4ea7de4a18b9a1273c05b24323314ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf6a64f097d345800a0516154cd447e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a7bf6a64f097d345800a0516154cd447e">WriteLines</a> (const char *output_file_name, char **lines_buffer, size_t lines_amount)</td></tr>
-<tr class="separator:a7bf6a64f097d345800a0516154cd447e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ba971efc0e1484029032a937c465bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a11ba971efc0e1484029032a937c465bc">ReadFile</a> (const char *input_file_name, char *chars_buffer, size_t chars_amount, char **pointers_buffer)</td></tr>
+<tr class="separator:a11ba971efc0e1484029032a937c465bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a25584f165d666a69ac31ba4161c6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a59a25584f165d666a69ac31ba4161c6b">WriteLines</a> (const char *output_file_name, char **pointers_buffer, size_t lines_amount)</td></tr>
+<tr class="separator:a59a25584f165d666a69ac31ba4161c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a550984a7f2f74290e672c9a78a017159"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a550984a7f2f74290e672c9a78a017159">WriteBuffer</a> (const char *output_file_name, char *chars_buffer, size_t lines_amount)</td></tr>
 <tr class="separator:a550984a7f2f74290e672c9a78a017159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47cce5371f74810230a55394fed77029"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a47cce5371f74810230a55394fed77029">CountSize</a> (const char *file_name)</td></tr>
@@ -113,7 +113,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>size of file (amount of chars)</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>return error number from enum Errors if error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00127">127</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00124">124</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>
@@ -146,8 +146,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af4ea7de4a18b9a1273c05b24323314ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ea7de4a18b9a1273c05b24323314ea">&#9670;&nbsp;</a></span>ReadFile()</h2>
+<a id="a11ba971efc0e1484029032a937c465bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ba971efc0e1484029032a937c465bc">&#9670;&nbsp;</a></span>ReadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>lines_buffer</em>&#160;</td>
+          <td class="paramname"><em>pointers_buffer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -189,14 +189,14 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">input_file_name</td><td>String with input file name </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">chars_buffer</td><td>Pointer to buffer for file </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">chars_amount</td><td>File size (amount of chars) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lines_buffer</td><td>Pointer to buffer with pointers to lines</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointers_buffer</td><td>Pointer to buffer with pointers to lines</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Amount of lines</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>return error number from enum Errors if error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00027">27</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00028">28</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>
@@ -243,12 +243,12 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 if correct complete</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>return error number from enum Errors if error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00103">103</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00100">100</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7bf6a64f097d345800a0516154cd447e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bf6a64f097d345800a0516154cd447e">&#9670;&nbsp;</a></span>WriteLines()</h2>
+<a id="a59a25584f165d666a69ac31ba4161c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a25584f165d666a69ac31ba4161c6b">&#9670;&nbsp;</a></span>WriteLines()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +263,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>lines_buffer</em>, </td>
+          <td class="paramname"><em>pointers_buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -278,11 +278,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Writing lines from lines_buffer</p>
+<p>Writing lines from pointers_buffer</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">output_file_name</td><td>String with output file name </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lines_buffer</td><td>Pointer to buffer with pointers to lines </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointers_buffer</td><td>Pointer to buffer with pointers to lines </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lines_amount</td><td>Amount of lines</td></tr>
   </table>
   </dd>
@@ -290,7 +290,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 if correct complete</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>return error number from enum Errors if error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00080">80</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_8cpp_source.html#l00079">79</a> of file <a class="el" href="io_8cpp_source.html">io.cpp</a>.</p>
 
 </div>
 </div>

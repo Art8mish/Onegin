@@ -3,38 +3,37 @@
 
 struct WorkingField *CreateWorkingField(const char *input_file_name)
 {
-    static struct WorkingField field{
+    struct WorkingField *field = (struct WorkingField*) calloc(1, sizeof(struct WorkingField));
 
-    CountSize(input_file_name) + 2,
-    (char*)  calloc(field.chars_amount, sizeof(char)),
+    (*field).chars_amount    = CountSize(input_file_name) + 2;
 
-    (char**) calloc(field.chars_amount, sizeof(char*)),
-    ReadFile(input_file_name, field.chars_buffer, field.chars_amount, field.lines_buffer)
+    (*field).chars_buffer    = (char*)  calloc((*field).chars_amount, sizeof(char));
 
-    };
+    (*field).pointers_buffer = (char**) calloc((*field).chars_amount, sizeof(char*));
 
-    Assert(field.chars_buffer != NULL, NULL);
-    Assert(field.lines_buffer != NULL, NULL);
+    (*field).lines_amount    = ReadFile(input_file_name, (*field).chars_buffer,         \
+                                        (*field).chars_amount, (*field).pointers_buffer);
 
-    Assert(field.lines_amount != POINTER_IS_NULL, NULL);
-    Assert(field.lines_amount != OPENING_FILE_ERROR, NULL);
-    Assert(field.lines_amount >= 0, NULL);
+    Assert((*field).chars_buffer != NULL, NULL);
+    Assert((*field).pointers_buffer != NULL, NULL);
 
-    return &field;
+    Assert((*field).lines_amount != POINTER_IS_NULL, NULL);
+    Assert((*field).lines_amount != OPENING_FILE_ERROR, NULL);
+    Assert((*field).lines_amount >= 0, NULL);
+
+    return field;
 }
 
 
-int ReadFile(const char *input_file_name, char *chars_buffer, size_t chars_amount, char **lines_buffer)
+int ReadFile(const char *input_file_name, char *chars_buffer, size_t chars_amount, char **pointers_buffer)
 {
     Assert(input_file_name != NULL, POINTER_IS_NULL);
-    Assert(lines_buffer != NULL, POINTER_IS_NULL);
+    Assert(pointers_buffer != NULL, POINTER_IS_NULL);
     Assert(chars_buffer != NULL, POINTER_IS_NULL);
 
     FILE *input_file = fopen(input_file_name, "r");
 
     Assert(input_file != NULL, OPENING_FILE_ERROR);
-
-    //printf("File opening success\n");
 
     fread(chars_buffer, 1, chars_amount, input_file);
 
@@ -51,7 +50,7 @@ int ReadFile(const char *input_file_name, char *chars_buffer, size_t chars_amoun
 
         if (*chars_buffer != '\n' && empty_string == true)
         {
-            *(lines_buffer++) = chars_buffer;
+            *(pointers_buffer++) = chars_buffer;
 
             empty_string = false;
         }
@@ -77,10 +76,10 @@ int ReadFile(const char *input_file_name, char *chars_buffer, size_t chars_amoun
 }
 
 
-int WriteLines(const char *output_file_name, char **lines_buffer, size_t lines_amount)
+int WriteLines(const char *output_file_name, char **pointers_buffer, size_t lines_amount)
 {
     Assert(output_file_name != NULL, POINTER_IS_NULL);
-    Assert(lines_buffer != NULL, POINTER_IS_NULL);
+    Assert(pointers_buffer != NULL, POINTER_IS_NULL);
 
     FILE *output_file = fopen(output_file_name, "a");
 
@@ -88,7 +87,7 @@ int WriteLines(const char *output_file_name, char **lines_buffer, size_t lines_a
 
     for (unsigned int index = 0; index < lines_amount; index++)
     {
-        char *str_address = *lines_buffer++;
+        char *str_address = *pointers_buffer++;
 
         fprintf(output_file, "%s\n", str_address);
     }

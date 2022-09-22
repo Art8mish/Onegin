@@ -6,9 +6,9 @@
 \item 
 struct \mbox{\hyperlink{struct_working_field}{Working\+Field}} $\ast$ \mbox{\hyperlink{io_8cpp_af05909062b51e603462e3ad39c886cc8}{Create\+Working\+Field}} (const char $\ast$input\+\_\+file\+\_\+name)
 \item 
-int \mbox{\hyperlink{io_8cpp_af4ea7de4a18b9a1273c05b24323314ea}{Read\+File}} (const char $\ast$input\+\_\+file\+\_\+name, char $\ast$chars\+\_\+buffer, size\+\_\+t chars\+\_\+amount, char $\ast$$\ast$lines\+\_\+buffer)
+int \mbox{\hyperlink{io_8cpp_a11ba971efc0e1484029032a937c465bc}{Read\+File}} (const char $\ast$input\+\_\+file\+\_\+name, char $\ast$chars\+\_\+buffer, size\+\_\+t chars\+\_\+amount, char $\ast$$\ast$pointers\+\_\+buffer)
 \item 
-int \mbox{\hyperlink{io_8cpp_a7bf6a64f097d345800a0516154cd447e}{Write\+Lines}} (const char $\ast$output\+\_\+file\+\_\+name, char $\ast$$\ast$lines\+\_\+buffer, size\+\_\+t lines\+\_\+amount)
+int \mbox{\hyperlink{io_8cpp_a59a25584f165d666a69ac31ba4161c6b}{Write\+Lines}} (const char $\ast$output\+\_\+file\+\_\+name, char $\ast$$\ast$pointers\+\_\+buffer, size\+\_\+t lines\+\_\+amount)
 \item 
 int \mbox{\hyperlink{io_8cpp_a550984a7f2f74290e672c9a78a017159}{Write\+Buffer}} (const char $\ast$output\+\_\+file\+\_\+name, char $\ast$chars\+\_\+buffer, size\+\_\+t lines\+\_\+amount)
 \item 
@@ -38,7 +38,7 @@ return error number from enum Errors if error
 \end{DoxyNote}
 
 
-Definition at line 127 of file io.\+cpp.
+Definition at line 124 of file io.\+cpp.
 
 \mbox{\Hypertarget{io_8cpp_af05909062b51e603462e3ad39c886cc8}\label{io_8cpp_af05909062b51e603462e3ad39c886cc8}} 
 \index{io.cpp@{io.cpp}!CreateWorkingField@{CreateWorkingField}}
@@ -63,11 +63,11 @@ return NULL if error
 
 Definition at line 4 of file io.\+cpp.
 
-\mbox{\Hypertarget{io_8cpp_af4ea7de4a18b9a1273c05b24323314ea}\label{io_8cpp_af4ea7de4a18b9a1273c05b24323314ea}} 
+\mbox{\Hypertarget{io_8cpp_a11ba971efc0e1484029032a937c465bc}\label{io_8cpp_a11ba971efc0e1484029032a937c465bc}} 
 \index{io.cpp@{io.cpp}!ReadFile@{ReadFile}}
 \index{ReadFile@{ReadFile}!io.cpp@{io.cpp}}
 \doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
-{\footnotesize\ttfamily int Read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+file\+\_\+name,  }\item[{char $\ast$}]{chars\+\_\+buffer,  }\item[{size\+\_\+t}]{chars\+\_\+amount,  }\item[{char $\ast$$\ast$}]{lines\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input\+\_\+file\+\_\+name,  }\item[{char $\ast$}]{chars\+\_\+buffer,  }\item[{size\+\_\+t}]{chars\+\_\+amount,  }\item[{char $\ast$$\ast$}]{pointers\+\_\+buffer }\end{DoxyParamCaption})}
 
 Reading file by filling buffer
 
@@ -79,7 +79,7 @@ Reading file by filling buffer
 \hline
 \mbox{\texttt{ in}}  & {\em chars\+\_\+amount} & File size (amount of chars) \\
 \hline
-\mbox{\texttt{ in}}  & {\em lines\+\_\+buffer} & Pointer to buffer with pointers to lines\\
+\mbox{\texttt{ in}}  & {\em pointers\+\_\+buffer} & Pointer to buffer with pointers to lines\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -90,7 +90,7 @@ return error number from enum Errors if error
 \end{DoxyNote}
 
 
-Definition at line 27 of file io.\+cpp.
+Definition at line 28 of file io.\+cpp.
 
 \mbox{\Hypertarget{io_8cpp_a550984a7f2f74290e672c9a78a017159}\label{io_8cpp_a550984a7f2f74290e672c9a78a017159}} 
 \index{io.cpp@{io.cpp}!WriteBuffer@{WriteBuffer}}
@@ -117,21 +117,21 @@ return error number from enum Errors if error
 \end{DoxyNote}
 
 
-Definition at line 103 of file io.\+cpp.
+Definition at line 100 of file io.\+cpp.
 
-\mbox{\Hypertarget{io_8cpp_a7bf6a64f097d345800a0516154cd447e}\label{io_8cpp_a7bf6a64f097d345800a0516154cd447e}} 
+\mbox{\Hypertarget{io_8cpp_a59a25584f165d666a69ac31ba4161c6b}\label{io_8cpp_a59a25584f165d666a69ac31ba4161c6b}} 
 \index{io.cpp@{io.cpp}!WriteLines@{WriteLines}}
 \index{WriteLines@{WriteLines}!io.cpp@{io.cpp}}
 \doxysubsubsection{\texorpdfstring{WriteLines()}{WriteLines()}}
-{\footnotesize\ttfamily int Write\+Lines (\begin{DoxyParamCaption}\item[{const char $\ast$}]{output\+\_\+file\+\_\+name,  }\item[{char $\ast$$\ast$}]{lines\+\_\+buffer,  }\item[{size\+\_\+t}]{lines\+\_\+amount }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Write\+Lines (\begin{DoxyParamCaption}\item[{const char $\ast$}]{output\+\_\+file\+\_\+name,  }\item[{char $\ast$$\ast$}]{pointers\+\_\+buffer,  }\item[{size\+\_\+t}]{lines\+\_\+amount }\end{DoxyParamCaption})}
 
-Writing lines from lines\+\_\+buffer
+Writing lines from pointers\+\_\+buffer
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em output\+\_\+file\+\_\+name} & String with output file name \\
 \hline
-\mbox{\texttt{ in}}  & {\em lines\+\_\+buffer} & Pointer to buffer with pointers to lines \\
+\mbox{\texttt{ in}}  & {\em pointers\+\_\+buffer} & Pointer to buffer with pointers to lines \\
 \hline
 \mbox{\texttt{ in}}  & {\em lines\+\_\+amount} & Amount of lines\\
 \hline
@@ -144,5 +144,5 @@ return error number from enum Errors if error
 \end{DoxyNote}
 
 
-Definition at line 80 of file io.\+cpp.
+Definition at line 79 of file io.\+cpp.
 

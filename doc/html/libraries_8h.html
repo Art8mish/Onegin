@@ -88,10 +88,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a7677d585c94dee072808b9ef76dc178b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libraries_8h.html#a7677d585c94dee072808b9ef76dc178b">STR_MAXLEN</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:a7677d585c94dee072808b9ef76dc178b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1c8b620db31b9b46185c7d866b1d28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libraries_8h.html#adf1c8b620db31b9b46185c7d866b1d28">INPUT_FILE_NAME</a>&#160;&#160;&#160;&quot;onegin.txt&quot;</td></tr>
-<tr class="separator:adf1c8b620db31b9b46185c7d866b1d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a654a682cd728e4926b7fbe94e85e7094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">SOFT_ASSERT</a>(condition)</td></tr>
 <tr class="separator:a654a682cd728e4926b7fbe94e85e7094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb811c12cf93fdfa6b434c671a7fd9f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libraries_8h.html#aeb811c12cf93fdfa6b434c671a7fd9f1">Assert</a>(condition,  error_type)</td></tr>
@@ -131,34 +127,18 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">            <a class="code" href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">SOFT_ASSERT</a>(condition);             \</div>
-<div class="line">            do                                  \</div>
-<div class="line">            {                                   \</div>
-<div class="line">                if (!(condition))               \</div>
-<div class="line">                {                               \</div>
-<div class="line">                  <span class="comment">/*error_code = error_type;*/</span>  \</div>
-<div class="line">                    return error_type;          \</div>
-<div class="line">                }                               \</div>
-<div class="line">            } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
-<div class="ttc" id="alibraries_8h_html_a654a682cd728e4926b7fbe94e85e7094"><div class="ttname"><a href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">SOFT_ASSERT</a></div><div class="ttdeci">#define SOFT_ASSERT(condition)</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00022">libraries.h:22</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">        <a class="code" href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">SOFT_ASSERT</a>(condition);             \</div>
+<div class="line">        do                                  \</div>
+<div class="line">        {                                   \</div>
+<div class="line">            if (!(condition))               \</div>
+<div class="line">            {                               \</div>
+<div class="line">              <span class="comment">/*error_code = error_type;*/</span>  \</div>
+<div class="line">                return error_type;          \</div>
+<div class="line">            }                               \</div>
+<div class="line">        } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
+<div class="ttc" id="alibraries_8h_html_a654a682cd728e4926b7fbe94e85e7094"><div class="ttname"><a href="libraries_8h.html#a654a682cd728e4926b7fbe94e85e7094">SOFT_ASSERT</a></div><div class="ttdeci">#define SOFT_ASSERT(condition)</div><div class="ttdef"><b>Definition:</b> <a href="libraries_8h_source.html#l00016">libraries.h:16</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00035">35</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
-
-</div>
-</div>
-<a id="adf1c8b620db31b9b46185c7d866b1d28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1c8b620db31b9b46185c7d866b1d28">&#9670;&nbsp;</a></span>INPUT_FILE_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INPUT_FILE_NAME&#160;&#160;&#160;&quot;onegin.txt&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00015">15</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00029">29</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
 
 </div>
 </div>
@@ -184,23 +164,7 @@ Enumerations</h2></td></tr>
 <div class="line">                           #condition, __FILE__, __LINE__);               \</div>
 <div class="line">            } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00022">22</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
-
-</div>
-</div>
-<a id="a7677d585c94dee072808b9ef76dc178b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7677d585c94dee072808b9ef76dc178b">&#9670;&nbsp;</a></span>STR_MAXLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STR_MAXLEN&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00011">11</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00016">16</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +186,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a8fb872c72e116bbd3eba31f48d78e76ba92f30ea25d7a59280d0510c1bccf62da"></a>STAT_ERROR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00046">46</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="libraries_8h_source.html#l00040">40</a> of file <a class="el" href="libraries_8h_source.html">libraries.h</a>.</p>
 
 </div>
 </div>

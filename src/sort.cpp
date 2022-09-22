@@ -3,9 +3,9 @@
 
 //bubble_sort
 
-int Sorting(char **lines_buffer, size_t lines_amount, int (*strcmp_type)(char *str1, char *str2))
+int Sorting(char **pointers_buffer, size_t lines_amount, int (*strcmp_type)(char *str1, char *str2))
 {
-    Assert(lines_buffer != NULL, POINTER_IS_NULL);
+    Assert(pointers_buffer != NULL, POINTER_IS_NULL);
     Assert(strcmp_type  != NULL, POINTER_IS_NULL);
 
     bool sorted = true;
@@ -14,11 +14,12 @@ int Sorting(char **lines_buffer, size_t lines_amount, int (*strcmp_type)(char *s
     {
         for (unsigned int index = 0; index < lines_amount - indention - 1; index++)
         {
-            if (strcmp_type(lines_buffer[index], lines_buffer[index + 1]) > 0)
+            if (strcmp_type(pointers_buffer[index], pointers_buffer[index + 1]) > 0)
             {
-                char* temporary = lines_buffer[index + 1];
-                lines_buffer[index + 1] = lines_buffer[index];
-                lines_buffer[index] = temporary;
+                char* temporary = pointers_buffer[index + 1];
+
+                pointers_buffer[index + 1] = pointers_buffer[index];
+                pointers_buffer[index]     = temporary;
 
                 sorted = false;
             }
