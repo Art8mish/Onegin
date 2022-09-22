@@ -44,9 +44,9 @@
 
 enum Errors
 {
-    POINTER_IS_NULL = -1,
+    POINTER_IS_NULL    = -1,
     OPENING_FILE_ERROR = -2,
-    STAT_ERROR = -3
+    STAT_ERROR         = -3
 };
 
 
