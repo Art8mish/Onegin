@@ -8,9 +8,6 @@
 #include "sorting_func.h"
 #include "io.h"
 
-#ifndef INPUT_FILE_NAME
-#define INPUT_FILE_NAME "onegin.txt"
-#endif
 
 //#define SOFT_ASSERT
 
