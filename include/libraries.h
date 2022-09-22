@@ -8,8 +8,6 @@
 #include "sorting_func.h"
 #include "io.h"
 
-#define STR_MAXLEN 1000
-
 
 #ifndef INPUT_FILE_NAME
 #define INPUT_FILE_NAME "onegin.txt"
@@ -19,6 +17,7 @@
 //#define SOFT_ASSERT
 
 #ifndef SOFT_ASSERT
+
 #define SOFT_ASSERT(condition)                                            \
             do                                                            \
             {                                                             \
@@ -32,16 +31,16 @@
 
 #endif
 
-#define Assert(condition, error_type)           \
-            SOFT_ASSERT(condition);             \
-            do                                  \
-            {                                   \
-                if (!(condition))               \
-                {                               \
-                  /*error_code = error_type;*/  \
-                    return error_type;          \
-                }                               \
-            } while(false)
+#define Assert(condition, error_type)       \
+        SOFT_ASSERT(condition);             \
+        do                                  \
+        {                                   \
+            if (!(condition))               \
+            {                               \
+                /*error_code = error_type;*/\
+                return error_type;          \
+            }                               \
+        } while(false)
 
 enum Errors
 {
