@@ -8,6 +8,7 @@
 #include "sorting_func.h"
 #include "io.h"
 
+
 //#define SOFT_ASSERT
 
 #ifndef SOFT_ASSERT
@@ -31,7 +32,7 @@
         {                                   \
             if (!(condition))               \
             {                               \
-              /*error_code = error_type;*/  \
+                /*error_code = error_type;*/\
                 return error_type;          \
             }                               \
         } while(false)
