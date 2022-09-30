@@ -8,15 +8,6 @@
 #include "sorting_func.h"
 #include "io.h"
 
-<<<<<<< HEAD
-=======
-
-#ifndef INPUT_FILE_NAME
-#define INPUT_FILE_NAME "onegin.txt"
-#endif
-
->>>>>>> 4c55c965d09fff2a65115dbaf16df65d55a4dc16
-
 //#define SOFT_ASSERT
 
 #ifndef SOFT_ASSERT
@@ -40,11 +31,7 @@
         {                                   \
             if (!(condition))               \
             {                               \
-<<<<<<< HEAD
               /*error_code = error_type;*/  \
-=======
-                /*error_code = error_type;*/\
->>>>>>> 4c55c965d09fff2a65115dbaf16df65d55a4dc16
                 return error_type;          \
             }                               \
         } while(false)

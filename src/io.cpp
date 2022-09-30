@@ -106,14 +106,19 @@ int WriteBuffer(const char *output_file_name, char *chars_buffer, size_t lines_a
 
     Assert(output_file != NULL, OPENING_FILE_ERROR);
 
+    char *str = chars_buffer;
+
     for (unsigned int index = 0; index < lines_amount; index++)
     {
-        char *str = chars_buffer;
+        while (*str != '\0')
+            str++;
 
-        fprintf(output_file, "%s\n", str);
-
-        chars_buffer += strlen(str) + 1;
+        *str = '\n';
     }
+
+    str = '\0';
+
+    fprintf(output_file, "%s\n", chars_buffer);
 
     fclose(output_file);
 
@@ -130,8 +135,6 @@ int CountSize(const char *file_name)
     int error_check = stat(file_name, &file_stat);
 
     Assert(error_check != -1, STAT_ERROR);
-
-    //printf("file_size = %ld\n", file_stat.st_size);
 
     return file_stat.st_size;
 }
